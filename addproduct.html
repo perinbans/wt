@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product add</title>
+        <link rel="stylesheet" href="./css/product.css">
+    </head>
+    <body>
+        <div class="add">
+            <div class="nav1"> <p>Add Poducts</p>
+                <p>Product > Add Products</p>
+            </div>
+            <div class="content">
+                <p>Add Products</p>
+                <form action="/addproduct" method="post" autocomplete="off">
+                    <div class="input">
+                        <label for="prname">Product Name</label>
+                        <input type="text" name="prname">
+                    </div>
+                    <div class="input">
+                        <label for="category">Category</label>
+                        <select name="category" class="input1">
+                            <option value="">Select Category</option>
+                            <option value="Computer">Computer</option>
+                            <option value="Television">Television</option>
+                            <option value="Shoes">Shoes</option>
+                            <option value="Fruits">Fruits</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="cost">Cost</label>
+                        <input type="text" name="cost">
+                    </div>
+                    <div class="input">
+                        <label for="stock">Stock</label>
+                        <input type="text" name="stock">
+                    </div>
+                    <div class="input">
+                        <label for="total">Total</label>
+                        <input type="text" name="total">
+                    </div>
+                    <div class="upload">
+                        <h4>Drop prodcut image here</h4>
+                        <p>Or</p>
+                        <label for="fileUpload"></label>
+                        <input type="file" name="fileUpload" id="file-input">
+                        <p>Allowed JPEG,JPG & PNG format | Max 100mb</p>
+                    </div>
+                    <br>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Copyright by Kamalesh</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Red+Rose:wght@300;400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+}
+.nav1{
+    height:100px;
+    width: 1790px;
+   font-weight: 300;
+   background-color: white;
+   box-shadow: #f2f2f2;
+   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+   cursor: pointer;
+   position: absolute;
+   padding-left: 25px;
+}
+.content{
+    height:570px;
+    width: 1000px;
+   font-size: medium;
+   font-weight: 300;
+   background:linear-gradient(to  right, #C22ED0,#5FFAE0);
+   border-radius: 1%;
+   box-shadow: #f2f2f2;
+   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+   position: absolute;
+   top: 150px;
+   left: 350px;
+   padding-left: 25px;
+   padding-top:10px ;
+   justify-content: space-between;
+}
+.input {
+    margin-top: 0.25rem;
+    font-size: large;
+    line-height: 1rem;
+    width:300px;
+}
+.input label {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.input input {
+    width: 300px;
+    height: 35px;
+    border-radius: 0.375rem;
+    border: 1px solid  rgba(167, 139, 250);
+    outline: 0;
+    background-color: rgb(250, 252, 255);
+    color: black;
+    font-size: large;
+    font-family: 'Red Rose', cursive;
+}
+  
+.input input:focus {
+    border-color: rgba(167, 139, 250);
+}
+.input1{
+    width: 300px;
+    height: 35px;
+    border-radius: 0.375rem;
+    border: 1px solid  rgba(167, 139, 250);
+    outline: 0;
+    background-color: rgb(250, 252, 255);
+    color: black;
+    font-size: large;
+    font-family: 'Red Rose', cursive;
+} 
+.sign {
+    display: block;
+    width: 300px;
+    background-color:  rgb(14, 91, 233);
+    padding: 0.75rem;
+    text-align: center;
+    color: black;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: medium;
+    font-weight:600;
+    font-family: 'Bruno Ace SC', cursive;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    top: -50px;
+  }
+.footer{
+    height:90px;
+    width: 1790px;
+   font-size: medium;
+   font-weight: 300;
+   background-color: rgb(14, 91, 233);
+   border-radius: 1%;
+   box-shadow: #f2f2f2;
+   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+   position: absolute;
+   top: 740px;
+   padding-left: 25px;
+   padding-top:20px ;
+   justify-content: space-between;
+   text-align: center;
+   color: white;
+   font-size: larger;
+}

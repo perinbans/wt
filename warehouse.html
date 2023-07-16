@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/sale.css">
+    </head>
+    <body>
+        <div class="nav1">
+            <h4>Add User</h4>
+            <p> <a href="/dash">User Management</a>  > Add User</p>
+        </div>
+        <div class="content">
+            <h3>Add New WareHouse</h3>
+            <form action="/ware" method="post" autocomplete="off">
+                <div class="input">
+                    <label for="name">WareHouse Name</label>
+                    <input type="text" name="wname" id="">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="wareid">Select WareHouse</label>
+                    <select name="wareid" id="" class="input1">
+                        <option value="">Select WareHouse</option>
+                        <option value="WareHouse 1">WareHouse 1</option>
+                        <option value="WareHouse 2">WareHouse 2</option>
+                        <option value="WareHouse 3">WareHouse 3</option>
+                    </select>
+                </div> <br>
+                <div class="input">
+                    <label for="wiid">Incharge Id</label>
+                    <input type="text" name="wiid">
+                </div> <br>
+                <div class="input">
+                    <label for="winame">Incharge Name</label>
+                    <input type="text" name="winame" id="">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="phno">Incharge Mobile Number</label>
+                    <input type="text" name="phno">
+                </div> <br>
+                <div class="input">
+                    <label for="email" style="position: absolute;
+                    left:50%;top: 55px;">Email Id</label>
+                    <input type="text" name="email" id=""style="position:absolute;left: 50%;top:80px;" >
+                </div> <br>
+                <div class="input">
+                    <label for="gender"  style="position: absolute;
+                    left:50%;top: 135px;">Gender</label>
+                    <select name="gender" id="" class="input1" style="position:
+                    absolute;left: 50%;top: 155px;">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div> <br>
+               
+                <div class="input" >
+                    <label for="wloc" style="position: absolute;left:50%;top:200px;">WareHouse Location</label>
+                    <select name="wloc" id="" class="input1" style="position: absolute;left:50%;top:220px;">
+                        <option value="">WareHouse Location</option>
+                        <option value="Local">Local</option>
+                        <option value="Foreign">Foreign</option>
+                    </select>
+                </div> <br>
+                <div class="input" >
+                    <label for="wcountry" style="position: absolute;
+                    left:50%;top:265px;">Country</p>
+                    <input type="text" name="wcountry"  style="position: absolute;top:23px;">
+                </div> <br>
+                <div class="input">
+                     <label for="wcity" style="position: absolute;
+                     left:50%;top:340px;" >City</p>
+                   <input type="text" name="wcity" id=""style="position: absolute;top:25px;" >
+                </div>
+                <div class="input"> 
+                    <label for="waddress"style="position: absolute;
+                    left:50%;top:410px;" >Address</p>
+               <input type="text" name="waddress" id=" "style="position: absolute;top:23px;">
+            </div>
+                <input type="submit" class="sign" value="Create Now" style="top:-100px;left:350px;">
+            </form>
+        </div>
+        <div class="footer">
+            <p>© Copyright by Kamalesh</p>
+        </div>
+    </body>
+</html>

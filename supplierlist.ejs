@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supplier List</title>
+    <link rel="stylesheet" href="/css/table.css">
+  </head>
+  <body>
+    <div class="nav1">
+      <h4>Supplier List</h4>
+      <p> <a href="/dash"> People</a>
+        > Supplier List</p>
+    </div>
+    <section class="table__body">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>ZipCode</th>
+            <th>Company</th>
+            <th>SupplierCode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(function(item) { %>
+          <tr>
+            <td><%= item.Supplier_Name %></td>
+            <td><%= item.Supplier_Mobile_Number%></td>
+            <td><%= item.Supplier_Email%></td>
+            <td><%= item.Supplier_Country%></td>
+            <td><%= item.Supplier_City%></td>
+            <td><%= item.Supplier_Address%></td>
+            <td><%= item.Supplier_Zipcode%></td>
+            <td><%= item.Supplier_Company%></td>
+            <td><%= item.Supplier_Code%></td>
+          </tr>8
+          <% }); %>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

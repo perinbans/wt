@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warehouse list</title>
+    <link rel="stylesheet" href="/css/table.css">
+  </head>
+  <body>
+    <div class="nav1">
+      <h4>Customer List</h4>
+      <p> <a href="/dash"> People</a>
+        > User List</p>
+    </div>
+    <section class="table__body">
+      <table>
+        <thead>
+          <tr>
+            <th>Warehouse_Name</th>
+            <th>WareHouse</th>
+            <th>Incharge Id</th>
+            <th>Incharge</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Location</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(function(item) { %>
+          <tr>
+            <td><%= item.Warehouse_Name %></td>
+            <td><%= item.Warehouse_Select%></td>
+            <td><%= item.Warehouse_Incharge_Id%></td>
+            <td><%= item.Warehouse_Incharge%></td>
+            <td><%= item.Warehouse_Incharge_Email %></td>
+            <td><%= item.Warehouse_Incharge_Gender%></td>
+            <td><%= item.Warehouse_Location%></td>
+            <td><%= item.Warehouse_Country%></td>
+            <td><%= item.Warehouse_City%></td>
+            <td><%= item.Warehouse_Address%></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

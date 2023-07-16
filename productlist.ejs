@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product List</title>
+    <link rel="stylesheet" href="/css/table.css">
+  </head>
+  <body>
+    <div class="nav1">
+      <h4>Product List</h4>
+      <p> <a href="/dash"> Prodcuts</a>
+        >Products List</p>
+    </div>
+    <section class="table__body">
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Cost</th>
+            <th>Stock</th>
+            <th>Toatl</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(function(item) { %>
+          <tr>
+            <td><%= item.Product_Name %></td>
+            <td><%= item.Product_Category%></td>
+            <td><%= item.Product_Cost%></td>
+            <td><%= item.Product_Stock%></td>
+            <td><%= item.Product_Total%></td>
+          </tr>8
+          <% }); %>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

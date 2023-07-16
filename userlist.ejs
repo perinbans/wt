@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>userlist</title>
+    <link rel="stylesheet" href="/css/table.css">
+  </head>
+  <body>
+    <div class="nav1">
+      <h4>User List</h4>
+      <p> <a href="/dash"> User Management</a>
+        > User List</p>
+  </div>
+    <section class="table__body">
+    <table>
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mobile Number</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Username</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(function(item) { %>
+        <tr>
+          <td><%= item.User_name %></td>
+          <td><%= item.Mobile_Number%></td>
+          <td><%= item.User_email%></td>
+          <td><%= item.User_gender%></td>
+          <td><%= item.User_Username%></td>
+          <td><%= item.User_Role%></td>
+        </tr>
+      <% }); %>
+    </tbody>
+    </table>
+  </section>
+  </body>
+</html>

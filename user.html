@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/sale.css">
+    </head>
+    <body>
+        <div class="nav1">
+            <h4>Add User</h4>
+            <p> <a href="/dash">User Management</a>  > Add User</p>
+        </div>
+        <div class="content">
+            <h3>Add New User</h3>
+            <form action="/users" method="post" autocomplete="off">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="phno">Mobile Number</label>
+                    <input type="text" name="phno">
+                </div> <br>
+                <div class="input">
+                    <label for="email">Email Id</label>
+                    <input type="text" name="email" id="">
+                </div> <br>
+                <div class="input">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="" class="input1">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div> <br>
+                <div class="input">
+                    <label for="username">User Name</label>
+                    <input type="text" name="username">
+                </div> <br>
+                <div class="input">
+                    <label for="password" style="position: absolute;
+                        left:50%;top: 85px;">Password</label>
+                    <input type="text" name="password" style="position:
+                        absolute;left: 50%;top:105px;">
+                </div> <br>
+                <div class="input">
+                    <label for="cpassword" style="position: absolute;
+                        left:50%;top: 160px;">Confirm Password</p>
+                    <input type="text" name="cpassword" style="position:
+                        absolute;top: 25px;">
+                </div> <br>
+                <div class="input"> <label for="role" style="position: absolute;
+                        left:50%;top:250px;">Role</p>
+                    <select name="role" style="position: absolute;top:25px;"
+                        class="input1">
+                        <option value="">Select Role</option>
+                        <option value="Supervisor">Supervisor</option>
+                        <option value="Officer">Officer</option>
+                        <option value="Manager">Manager</option>
+                    </select>
+                </div>
+                <input type="submit" class="sign" value="Create Now">
+            </form>
+        </div>
+        <div class="footer">
+            <p>© Copyright by Kamalesh</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <title>Customer List</title>
+  <link rel="stylesheet" href="/css/table.css">
+  <body>
+    <div class="nav1">
+      <h4>Customer List</h4>
+      <p> <a href="/dash"> People</a>
+        > User List</p>
+    </div>
+    <section class="table__body">
+      <table>
+        <thead>
+          <tr>
+
+            <th>Name</th>
+            <th>Group</th>
+            <th>Mobile Number</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Zipcode</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(function(item) { %>
+          <tr>
+            <td><%= item.Customer_Name %></td>
+            <td><%= item.Customer_Group%></td>
+            <td><%= item.Customer_Mobile_Number%></td>
+            <td><%= item.Customer_Email%></td>
+            <td><%= item.Customer_Country%></td>
+            <td><%= item.Customer_City%></td>
+            <td><%= item.Customer_Address%></td>
+            <td><%= item.Customer_Zipcode%></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

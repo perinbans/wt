@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Sale</title>
+        <link rel="stylesheet" href="./css/sale.css">
+    </head>
+    <body>
+        <div class="nav1">
+            <h4>New Sale</h4>
+            <p> Trading > Sale > New Sale</p>
+        </div>
+        <div class="content">
+            <h3>Add Sale</h3>
+            <form action="/newsales" method="post" autocomplete="off">
+                <div class="input">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="">
+                </div> <br>
+                <div class="input">
+                    <label for="warehouse">Select Warehouse</label>
+                    <select name="warehouse" id="" class="input1">
+                        <option value="WareHouse1">WareHouse1</option>
+                        <option value="WareHouse2">WareHouse2</option>
+                        <option value="WareHouse3">WareHouse3</option>
+                    </select>
+                </div> <br>
+                <div class="input">
+                    <label for="biller">Biller</label>
+                    <input type="text" name="biller">
+                </div> <br>
+                <div class="input">
+                    <label for="customer">Customer</label>
+                    <input type="text" name="customer">
+                </div> <br>
+                <div class="input">
+                    <label for="ship" style="position: absolute;left: 50%;top:75px;">Shipping Status</label>
+                         <select name="ship" style="position:
+                         absolute;left: 50%;top: 95px;" class="input1">
+                         <option value="Shipped">Shipped</option>
+                         <option value="Not Shipped">Not Shipped</option>
+                     </select>
+                </div>
+                <div class="input">
+                    <label for="status" style="position: absolute; left:50%;top:160px;">Sales Status</label>
+                    <select name="status" style="position: absolute;left:
+                        50%;top: 180px;" class="input1">
+                        <option value="Complete">Complete</option>
+                        <option value="Incomplete">Incomplete</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="payment" style="position: absolute;left:
+                        50%;top: 250px;">Payment Status</label>
+                    <select name="payment" style="position: absolute;left: 50%;top:270px;"
+                        class="input1">
+                        <option value="Paid">Paid</option>
+                        <option value="Not Paid">Not Paid</option>
+                        <option value="Partially">Partially</option>
+                    </select>
+                </div>
+                <input type="submit" value="Submit" style="position:
+                    absolute;left:370px;top:470px;" class="sign">
+            </form>
+        </div>
+        <div class="footer">
+            <p>© Copyright by Kamalesh</p>
+        </div>
+    </body>
+</html>

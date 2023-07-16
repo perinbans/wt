@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Purhase list</title>
+    <link rel="stylesheet" href="/css/table.css">
+  </head>
+  <body>
+    <div class="nav1">
+      <h4>Purchase List</h4>
+      <p> <a href="/dash"> Trading</a>
+        > Purchase List</p>
+    </div>
+    <section class="table__body">
+      <table>
+        <thead>
+          <tr>
+            <th>Purchase_Date</th>
+            <th>Purchase_House</th>
+            <th>Purchase_Supplier</th>
+            <th>Purchase_Name</th>
+            <th>Purchase_Quantity</th>
+            <th>Purchase_Cost</th>
+            <th>Purchase_Payment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(function(item) { %>
+          <tr>
+            <td><%= item.Purchase_Date%></td>
+            <td><%= item.Purchase_House%></td>
+            <td><%= item.Purchase_Supplier%></td>
+            <td><%= item.Purchase_Name%></td>
+            <td><%= item.Purchase_Quantity%></td>
+            <td><%= item.Purchase_Cost%></td>
+            <td><%= item.Purchase_Payment%></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

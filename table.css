@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Maven+Pro&family=Nunito&family=Red+Rose:wght@300;400&family=Titillium+Web&display=swap');
+ body{
+    background: url(/images/img-14.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ a{
+    list-style: none;
+    text-decoration: none;
+ }
+ .nav1{
+    height:100px;
+    width: 1790px;
+   font-weight: 300;
+   background-color: white;
+   box-shadow: #f2f2f2;
+   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+   cursor: pointer;
+   position: absolute;
+   font-family: 'Maven Pro',sans-serif;
+   padding-left: 25px;
+}
+ table {
+    background: linear-gradient(
+        rgba(255,255,255,0),
+        rgba(255,255,255,0.7)
+    );
+    backdrop-filter: blur(2rem);
+    box-shadow: 0 .4rem .8rem rgba(248, 246, 246, 0.333);
+    border-radius: .8rem;
+    overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+ }
+ .table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+}
+
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: rgba(243, 241, 241, 0.267);
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+table {
+    width: 95%;
+}
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td {
+    transition: .2s ease-in-out;
+}
